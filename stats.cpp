@@ -13,7 +13,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& i_lstData) {
         return tempStatsObj;
     }
 
-    tempStatsObj.average = accumulate(i_lstData.begin(), i_lstData.end(), 0)/i_lstData.size();
+    tempStatsObj.average = accumulate(i_lstData.begin(), i_lstData.end(), 0)/(float)i_lstData.size();
     tempStatsObj.min = *min_element(i_lstData.begin(), i_lstData.end());
     tempStatsObj.max = *max_element(i_lstData.begin(), i_lstData.end());
     return tempStatsObj;
