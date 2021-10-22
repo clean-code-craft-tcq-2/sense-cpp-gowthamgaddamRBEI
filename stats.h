@@ -23,7 +23,7 @@ public:
     bool emailSent;
 };
 
-class LEDAlert : public LEDAlert
+class LEDAlert : public IAlerter
 {
 public:
     bool ledGlows;
