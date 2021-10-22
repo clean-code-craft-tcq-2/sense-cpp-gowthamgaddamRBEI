@@ -14,19 +14,20 @@ namespace Statistics {
 
 class IAlerter
 {
-
+public:
+    bool emailSent;
+    bool ledGlows;
 };
 
 class EmailAlert : public IAlerter
 {
-public:
-    bool emailSent;
+
 };
 
 class LEDAlert : public IAlerter
 {
 public:
-    bool ledGlows;
+
 };
 
 class StatsAlerter
